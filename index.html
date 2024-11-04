@@ -17,24 +17,25 @@
 </head>
 
 <body class="light-them" aria-label="O site está utilizando o tema light" role="body">
+
     <header aria-label="Cabeçalho da página.">
-        <!-- <audio id="music" autoplay>  -->
+        <audio id="music" >
             <source src="./assets/musics/normal-world.mpeg" aria-details="Audio do site">
         </audio>
+        <div class="header-content">
+            <img src="./assets/image/banner/logo.svg" alt="" class="invert-element">
+            <p class="invert-element" role="text">
+                Uma jornada para quem não tem medo do desconhecido. O caminho para o
+                Mundo Invertido é incerto, repleto de obstáculos e perigos. Porém a
+                recompensa é grande: salvar Hawkings e o mundo todo das garras de
+                Vecna. Você está preparado? Então clique no botão abaixo para entrar
+                no Mundo Invertido.
+            </p>
+            <button id="switch-theme-butto0n" onclick="switchTheme()">Inverter Mundos</button>
+        </div>
+        <div id="top-characters" class="world-characters"></div>
     </header>
 
-    <div class="header-content">
-        <img src="./assets/image/banner/logo.svg" alt="" class="invert-element">
-        <p class="invert-element" role="text">
-            Uma jornada para quem não tem medo do desconhecido. O caminho para o
-            Mundo Invertido é incerto, repleto de obstáculos e perigos. Porém a
-            recompensa é grande: salvar Hawkings e o mundo todo das garras de
-            Vecna. Você está preparado? Então clique no botão abaixo para entrar
-            no Mundo Invertido.
-        </p>
-        <button id="switch-theme-butto0n" onclick="switchTheme()">Inverter Mundos</button>
-    </div>
-    <div id="top-characters" class="world-characters"></div>
 
     <main>
 
@@ -42,7 +43,7 @@
             <div class="section-texts">
                 <h1>O Mundo Invertido</h1>
                 <p role="text">
-                    O Mundo Invertido parece umam cópia do nosso mundo, mas com criaturas
+                    O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
                     horrendas, tempestades assustadoras, muita escuridão e entidades
                     malignas. Um reino controlado por Vecna, que tem planos de trazer
                     tudo isso ao nosso mundo.
@@ -72,7 +73,7 @@
 
         <section id="section-stranger-things-gallery">
             <div class="container section-text">
-                <h2>A segunda série mais assitida da Netflix</h2>
+                <h2>A segunda série mais assistida da Netflix</h2>
                 <ul class="gallery-container" role="gallery">
                     <li class="gallery-image invert-element">
                         <img src="./assets/image/content/serie-image-01.png" alt="Imagem de Vecna">
@@ -92,13 +93,13 @@
         <section id="sesction-form" class="container">
             <h2>O Clube Dungeons & Dragons</h2>
             <p role="text">
-                Para deter Vecna, os hérois de Stranger Things stambém precisam de você. O Clube de D&D
+                Para deter Vecna, os hérois de Stranger Things também precisam de você. O Clube de D&D
                 mais famoso de Hawkings está com vagas abertas para suas próximas aventuras. Se você
                 é destiemido, gosta de desafios e não tem medo de rodar o D20, chegou a hora de se
                 inscrever para fazer parte da nova <i>campanha</i>.
             </p>
             <div class="form-container">
-                <h3>Entre para o clube de D&D e tanha experiências de <span>outro mundo</span></h3>
+                <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo</span></h3>
                 <div class="form-container">
                     <form>
                         <label for="txtName">Nome Completo</label>
