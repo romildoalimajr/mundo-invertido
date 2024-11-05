@@ -1,4 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
 /*** VARIABLES & THEMES ***/
 
@@ -49,13 +51,14 @@
 }
 
 .dark-theme .invert-element{
-  transform: rotateZ(180deg) scaleX(-1);
+  transform: rotateZ('180deg') scaleX(-1);
 }
 
 *{
   margin: 0;
   box-sizing: border-box;
   list-style: none;
+  transition: 1s;
 }
 
 h1,
@@ -131,13 +134,13 @@ header::before{
   background-position: center 90%;
   filter: saturate(0);
   opacity: 0.4;
-  z-index: -2;
 }
 
 .header-content{
   max-width: 700px;
   padding: 80px 20px;
   text-align: center;
+  z-index: 2;
 }
 
 .header-content img{
@@ -164,6 +167,7 @@ header::before{
   width: 100%;
   max-width: 900px;
   position: absolute;
+  
 }
 
 #top-characters{
@@ -232,7 +236,7 @@ section{
   width: 50%;
   text-align: right;
 }
-#section-stranger-things-trailer .section-texts{
+#section-stranger-things-trailer .section-texts h2{
   max-width: 425px;
   display: inline-block;
 }
@@ -254,7 +258,7 @@ section{
 #section-stranger-things-gallery{
   width: 100%;
   justify-content: center;
-  background-color: var(--background-lamp-image) 120% / 50% no-repeat;
+  background: var(--background-lamp-image) 120% / 50% no-repeat;
 }
 
 #section-stranger-things-gallery .container{
@@ -274,7 +278,7 @@ section{
   width: 250px;
   height: 250px;
   outline: 20px solid var(--highlight-color);
-  border: 3p solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   box-sizing: initial;
 }
 
@@ -369,7 +373,7 @@ footer:after{
   content: "";
   width: 300px;
   height: 200px;
-  background: url("../image/footer/tape.svg");
+  background: url("../image/footer/tape.svg") no-repeat;
   background-size: contain;
   position: absolute;
   bottom: -30px;
